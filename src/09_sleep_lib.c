@@ -21,6 +21,6 @@ static int u_sleep(lua_State *L)
 int luaopen_msleep(lua_State *L)
 {
     lua_register(L, "sleep", s_sleep);
-    lua_register(L, "msleep", m_sleep);
+    lua_register(L, "msleep", u_sleep);
     return 0;
 }
